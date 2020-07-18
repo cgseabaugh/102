@@ -6,9 +6,11 @@ var prodPrice = prompt("Enter Product's Price:");
 
 console.log(prodName + "|" + prodQuant + "|" + prodPrice);
 
-var tax = prodPrice * .16;
-var total = prodPrice + tax
+var total = prodPrice * prodQuant;
+var tax = total * .16;
 
-console.log("Price including tax:" + total);
+var totalWithTax = total + tax;
+
+console.log("Price including tax:" + totalWithTax);
 
 
